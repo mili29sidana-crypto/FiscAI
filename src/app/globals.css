@@ -1,0 +1,135 @@
+:root {
+  --bg: #0b1120;
+  --panel: #131c31;
+  --border: #25324d;
+  --text: #e6ecf7;
+  --muted: #98a6c0;
+  --accent: #4c8bf5;
+  --danger: #f4667c;
+  --ok: #4ad6a0;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+ 
+a {
+  color: var(--accent);
+}
+ 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+ 
+header.site {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+ 
+header.site strong {
+  margin-right: auto;
+}
+ 
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+ 
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+ 
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: #0e1626;
+  color: var(--text);
+  font-size: 14px;
+}
+ 
+button {
+  margin-top: 16px;
+  padding: 9px 16px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #04101f;
+  font-weight: 600;
+  cursor: pointer;
+}
+ 
+button.secondary {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+ 
+button.danger {
+  background: var(--danger);
+}
+ 
+button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+ 
+.error {
+  color: var(--danger);
+}
+ 
+.success {
+  color: var(--ok);
+}
+ 
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+ 
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 6px;
+  vertical-align: top;
+}
+ 
+ol.states {
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+ 
+ol.states li.current {
+  color: var(--text);
+  font-weight: 600;
+}
